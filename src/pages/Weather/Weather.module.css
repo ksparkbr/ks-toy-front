@@ -1,0 +1,17 @@
+.selectDateBtn{
+    padding: .5rem 2rem .5rem 2rem;
+    border: 2px solid rgb(167, 195, 255);
+    margin: 0rem .5rem 1rem .5rem;
+    border-radius: 20px;
+    color:rgb(41, 109, 255);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.selectDateBtn:hover{
+    background-color: rgb(245, 245, 255);
+}
+
+.locationSelector{
+    
+}

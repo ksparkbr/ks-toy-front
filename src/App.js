@@ -1,24 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Navigate, Route, Router, Routes } from 'react-router-dom';
+import Weather from './pages/Weather/Weather';
+import SideBar from './component/SideBar';
+import { useSelector } from 'react-redux';
 
 function App() {
+  const sideBarState = useSelector((s)=>s.sideBarState);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <SideBar />
+      <main className="app" style={{paddingLeft: (sideBarState * 200) + "px"}}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Navigate to="/weather" />} />
+            <Route path="/weather" element={<Weather />} />
+          </Routes>
+        </BrowserRouter>
+      </main>
+    </>
   );
 }
 
