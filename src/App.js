@@ -4,21 +4,26 @@ import { BrowserRouter, Navigate, Route, Router, Routes } from 'react-router-dom
 import Weather from './pages/Weather/Weather';
 import SideBar from './component/SideBar';
 import { useSelector } from 'react-redux';
+import Covid from './pages/Covid/Covid';
+import CovidLive from './pages/CovidLive/CovidLive';
 
 function App() {
   const sideBarState = useSelector((s)=>s.sideBarState);
 
   return (
     <>
-      <SideBar />
-      <main className="app" style={{paddingLeft: (sideBarState * 200) + "px"}}>
         <BrowserRouter>
+          <SideBar />
+          <main className="app" style={{paddingLeft: (sideBarState * 200) + "px"}}>
           <Routes>
             <Route path="/" element={<Navigate to="/weather" />} />
             <Route path="/weather" element={<Weather />} />
+            <Route path="/covid19" element={<Covid />} />
+            <Route path="/covidLive" element={<CovidLive />} />
           </Routes>
+          </main>
         </BrowserRouter>
-      </main>
+      
     </>
   );
 }
