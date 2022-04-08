@@ -16,5 +16,23 @@ export const action = {
         return {
             type: type.TOGGLE_SIDEBAR
         }
+    },
+    SET_COVID_DATA: (data) =>{
+        return {
+            type: type.SET_COVID_DATA,
+            data: data,
+        }
+    },
+    SET_COVID_SELECTED_DATE : (data) =>{
+        return {
+            type: type.SET_COVID_SELECTED_DATE,
+            data: data,
+        }
+    },
+    SET_SELECTED_GUBUN : (data)=>{
+        return{
+            type: type.SET_SELECTED_GUBUN,
+            data: data,
+        }
     }
 }

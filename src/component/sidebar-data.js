@@ -11,7 +11,7 @@ export const sidebarData = [
     },
     {
         menuItem : "코로나라이브",
-        menuIcon : <i className="fas fa-virus-covid" />,
+        menuIcon : <i className="fa-solid fa-tower-broadcast"></i>,
         href: "/covidLive",
     },
 

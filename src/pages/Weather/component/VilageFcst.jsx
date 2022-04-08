@@ -39,6 +39,15 @@ export default function VilageFcst({ data }) {
         })
     }
 
+    useEffect(()=>{
+        if(load){
+            try{
+                document.getElementById(`option1`).click();
+                document.getElementById(`div-btn-0`).click();
+            }catch(e){}
+        }
+    }, [load])
+
     const locationInfo = useSelector((s) => s.locationInfo);
 
     useEffect(() => {

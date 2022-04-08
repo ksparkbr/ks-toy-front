@@ -1,0 +1,19 @@
+.gubunScroll::-webkit-scrollbar{
+    height: 10px;
+}
+.gubunScroll::-webkit-scrollbar-thumb{
+    background-color: #1268f132;
+    border-radius: 10px;
+    transition: .5s;
+}
+.gubunScroll::-webkit-scrollbar-thumb:hover{
+    background-color: #1268f166;
+}
+.gubunScroll::-webkit-scrollbar-track{
+    height: 5px;
+    background-color: #1268f111;
+}
+
+.blueGradient{
+    background: linear-gradient(180deg, #1266f1, #003b9e)
+}
