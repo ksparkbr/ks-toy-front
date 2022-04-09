@@ -14,6 +14,11 @@ export const sidebarData = [
         menuIcon : <i className="fa-solid fa-tower-broadcast"></i>,
         href: "/covidLive",
     },
+    {
+        menuItem : "정보보안 뉴스",
+        menuIcon : <i className="fa-solid fa-newspaper"></i>,
+        href: "/news",
+    },
 
 
 ]

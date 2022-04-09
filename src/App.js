@@ -6,6 +6,7 @@ import SideBar from './component/SideBar';
 import { useSelector } from 'react-redux';
 import Covid from './pages/Covid/Covid';
 import CovidLive from './pages/CovidLive/CovidLive';
+import News from './pages/News/News';
 
 function App() {
   const sideBarState = useSelector((s)=>s.sideBarState);
@@ -20,6 +21,7 @@ function App() {
             <Route path="/weather" element={<Weather />} />
             <Route path="/covid19" element={<Covid />} />
             <Route path="/covidLive" element={<CovidLive />} />
+            <Route path="/news" element={<News />} />
           </Routes>
           </main>
         </BrowserRouter>

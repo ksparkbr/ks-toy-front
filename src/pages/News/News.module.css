@@ -1,0 +1,53 @@
+.newsTitle{
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .3s;
+    color: #1266f1;
+}
+
+.newsTitle b{
+    font-weight: bold;
+}
+
+.newsTitle:hover{
+    color: red
+}
+
+.newsArticle{
+    margin: 1rem;
+    cursor: default;
+}
+
+.newsDiscription{
+    cursor: default;
+    padding-left:10px;
+    color:#828282;
+    font-size: .9rem
+}
+
+.newsDiscription b{
+    font-weight: normal;
+}
+
+.newsPubdate{
+    cursor: default;
+    color:#828282;
+    margin-left : .5rem;
+    font-size: .9rem
+}
+
+.newsLink{
+    cursor: pointer;
+    color:#828282;
+    margin-left : .5rem;
+    font-size: .9rem;
+    max-width:300px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: .3s;
+}
+.newsLink:hover{
+    color: red
+}
